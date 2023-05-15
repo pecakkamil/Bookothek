@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+</head>
+<body>
+    <form action="{{ url_for('add_user') }}" method="POST">
+        <label>First Name</label>
+        <input name="first_name" type="text">
+        <label>Last Name</label>
+        <input name="last_name" type="text">
+
+        <button type="submit">Add User</button>
+    </form>
+</body>
+</html>
